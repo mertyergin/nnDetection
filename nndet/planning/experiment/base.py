@@ -430,7 +430,7 @@ class AbstractPlanner(ABC):
             )
 
         logger.info(f"Found {len(cases)} cases for preprocssing in {splitted_4d_output_dir} "
-                    f"and {len(cases_processed)} alrady processed cases.")
+                    f"and {len(cases_processed)} already processed cases.")
         preprocessor = cls.create_preprocessor(plan=plan)
 
         if num_processes > 0:
